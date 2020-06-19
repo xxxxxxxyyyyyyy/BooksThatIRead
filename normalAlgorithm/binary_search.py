@@ -1,15 +1,15 @@
 def binary_search(_list, item):
-    low = 0
-    high = len(_list) - 1
-    while low <= high:
-        mid = (int)((low + high) / 2)
+    _low = 0
+    _high = len(_list) - 1
+    while _low <= _high:
+        mid = (int)((_low + _high) / 2)
         temp = _list[mid]
         if temp == item:
             return mid
         if temp > item:
-            high = mid - 1
+            _high = mid - 1
         else:
-            low = mid + 1
+            _low = mid + 1
     return None
 
 
